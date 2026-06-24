@@ -1,0 +1,104 @@
+DAG_0 start
+A -> B C
+B -> D
+C -> D
+D ->
+DAG_0 stop
+DAG_1 start
+A -> B C
+B -> D
+C -> D E
+D -> F G H
+E -> F
+F ->
+G -> H
+H ->
+DAG_1 stop
+DAG_2 start
+A -> B C
+B -> D E
+C -> E
+D ->
+E ->
+DAG_2 stop
+DAG_3 start
+A -> C
+B -> C
+C -> D
+D ->
+DAG_3 stop
+DAG_4 start
+A ->
+B -> A D
+C -> B D
+D -> A
+DAG_4 stop
+DAG_5 start
+A -> D E
+B -> C F
+C -> A D
+D -> E
+E -> F
+F ->
+DAG_5 stop
+DAG_6 start
+A ->
+B -> E
+C -> E
+D ->
+E -> A D
+F -> D
+G -> B E
+H -> B D
+DAG_6 stop
+DAG_7 start
+A -> B C E F G
+B ->
+C -> D
+D -> F
+E -> F
+F ->
+G -> F
+DAG_7 stop
+DAG_8 start
+A -> B C E
+B -> E C
+C -> D
+D ->
+E ->
+DAG_8 stop
+DAG_9 start
+A -> H E D
+B -> A C
+C -> D F
+D -> E F G
+E -> H G
+F -> G
+G -> H
+H ->
+DAG_9 stop
+DAG_10 start
+A -> D
+B -> C
+C -> D
+D ->
+E -> A B
+DAG_10 stop
+NoDAG1 start
+A -> B C
+B -> D
+C -> D
+D -> D
+NoDAG1 stop
+NoDAG2 start
+A -> B C
+B -> D
+C -> D
+D -> A
+NoDAG2 stop
+NoDAG3 start
+A -> B C
+B -> D
+C -> D
+D -> B
+NoDAG3 stop
